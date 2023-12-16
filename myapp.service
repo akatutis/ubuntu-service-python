@@ -1,0 +1,11 @@
+[Unit]
+Description=My Application Service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/myapp/start-myapp.sh
+
+[Install]
+WantedBy=multi-user.target
